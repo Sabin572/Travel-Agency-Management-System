@@ -451,6 +451,11 @@ public class TravelAgency extends javax.swing.JFrame {
         btnAboutus.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnAboutus.setForeground(new java.awt.Color(255, 255, 255));
         btnAboutus.setText("About us");
+        btnAboutus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAboutusActionPerformed(evt);
+            }
+        });
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/travelagencymanagementsystem/resources/loadingpage.jpeg"))); // NOI18N
         jLabel12.setText("jLabel12");
@@ -530,6 +535,11 @@ public class TravelAgency extends javax.swing.JFrame {
         btnLogout.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnLogout.setForeground(new java.awt.Color(255, 255, 255));
         btnLogout.setText("Log out");
+        btnLogout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLogoutActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -1112,6 +1122,11 @@ public class TravelAgency extends javax.swing.JFrame {
         btnHomePage.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnHomePage.setForeground(new java.awt.Color(255, 255, 255));
         btnHomePage.setText("Home");
+        btnHomePage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHomePageActionPerformed(evt);
+            }
+        });
 
         btnDashboardpage.setBackground(new java.awt.Color(0, 51, 153));
         btnDashboardpage.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -1127,6 +1142,11 @@ public class TravelAgency extends javax.swing.JFrame {
         btnLogoutpage.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnLogoutpage.setForeground(new java.awt.Color(255, 255, 255));
         btnLogoutpage.setText("Log out");
+        btnLogoutpage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLogoutpageActionPerformed(evt);
+            }
+        });
 
         btnaboutuspage.setBackground(new java.awt.Color(204, 0, 0));
         btnaboutuspage.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -1698,6 +1718,34 @@ public class TravelAgency extends javax.swing.JFrame {
     private void TxtFldPhoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtFldPhoneActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtFldPhoneActionPerformed
+
+    private void btnLogoutpageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutpageActionPerformed
+        // TODO add your handling code here:
+        password.setText("");
+        username.setText("");
+        cardLayout.show(getContentPane(), "pnlLoginScreen"); // Correctly switch to the Dashboard screen
+        pnlLoadingScreen("LoginScreen");
+    }//GEN-LAST:event_btnLogoutpageActionPerformed
+
+    private void btnAboutusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAboutusActionPerformed
+        // TODO add your handling code here:
+        cardLayout.show(getContentPane(), "pnlAboutUs"); // Correctly switch to the AboutUs screen
+        pnlLoadingScreen("pnlAboutUs");
+    }//GEN-LAST:event_btnAboutusActionPerformed
+
+    private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
+        // TODO add your handling code here:
+        password.setText("");
+        username.setText("");
+        cardLayout.show(getContentPane(), "pnlLoginScreen"); // Correctly switch to the Dashboard screen
+        pnlLoadingScreen("LoginScreen");
+    }//GEN-LAST:event_btnLogoutActionPerformed
+
+    private void btnHomePageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomePageActionPerformed
+        // TODO add your handling code here:
+        cardLayout.show(getContentPane(), "pnlHomeScreen"); // Correctly switch to the AboutUs screen
+        pnlLoadingScreen("pnlHomeScreen");
+    }//GEN-LAST:event_btnHomePageActionPerformed
 
     
     
